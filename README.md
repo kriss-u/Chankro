@@ -1,3 +1,7 @@
+# What's in this fork?
+
+This fork intends to upgrade the Python2 version of Chankro to Python3
+
 # Chankro
 
 Your favourite tool to bypass __disable_functions__ and __open_basedir__ in your pentests. 
@@ -19,16 +23,3 @@ Note: path is the absolute path where our .so will be dropped.
 ## Install
 
 ### Git
-
-```
-$ git clone https://github.com/TarlogicSecurity/Chankro.git
-$ cd Chankro
-$ python2 chankro.py --help
-```
-
-### [BlackArch](https://blackarch.org/)
-
-```
-# pacman -S chankro
-$ chankro --help
-```
